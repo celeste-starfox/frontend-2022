@@ -6,7 +6,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 We have included screenshots of the design. 
 We would like to see the list of vehicles displayed on the home page.
-Once the user selects the X Models - all X models need to be displayed ref: screenshot-2.
+Once the user selects the X Models - all X models need to be displayed ref: desktop_2.png.
 Once an X model is selected, and the "Find my BMW" button is clicked - console log the selected vehicle.
 Reference screenshots: angularTest2022/desktop_1.png, angularTest2022/desktop_2.png, mobile_1.jpg, mobile_2.jpg & mobile_nav.jpg
 
