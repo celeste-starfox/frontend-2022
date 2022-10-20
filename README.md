@@ -11,7 +11,7 @@ Once an X model is selected, and the "Find my BMW" button is clicked - console l
 Reference screenshots: angularTest2022/desktop_1.png, angularTest2022/desktop_2.png, mobile_1.jpg, mobile_2.jpg & mobile_nav.jpg
 
 ## Important
-We also want the UI to be responsive.
+We want the UI to be responsive.
 Bootstrap is allowed. 
 You can add your own icons.
 Create your own json Object for the list of vehicles.
