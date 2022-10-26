@@ -1,0 +1,24 @@
+{
+    "paymentOptions": [
+        {
+            "id": 1,
+            "viewValue": "BMW Select Finance"
+        },
+        {
+            "id": 2,
+            "viewValue": "Instalment Sale"
+        },
+        {
+            "id": 3,
+            "viewValue": "BMW Charter"
+        },
+        {
+            "id": 4,
+            "viewValue": "Cash"
+        },
+        {
+            "id": 5,
+            "viewValue": "Other"
+        }
+    ]
+}

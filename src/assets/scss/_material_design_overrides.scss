@@ -1,0 +1,31 @@
+@use 'variables' as vars;
+
+.mat-form-field {
+
+    .mat-form-field-outline-start,
+    .mat-form-field-outline-end {
+        border-radius: 0 !important;
+    }
+}
+
+.mat-slider.mat-accent .mat-slider-thumb,
+.mat-slider-track-fill {
+    background-color: vars.$bmw-blue !important;
+}
+
+.mat-form-field-appearance-outline.mat-focused,
+.mat-form-field-appearance-outline.mat-focused .mat-form-field-outline-thick,
+.mat-primary .mat-option.mat-selected:not(.mat-option-disabled) {
+    color: vars.$bmw-blue !important;
+}
+
+.mat-flat-button {
+    border-radius: 0px !important;
+    background-color: vars.$bmw-blue !important;
+}
+
+.mat-checkbox-checked.mat-accent .mat-checkbox-background,
+.mat-ripple-element {
+    background-color: vars.$bmw-blue !important;
+    background: vars.$bmw-blue !important;
+}

@@ -1,0 +1,101 @@
+<div class=" models-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-12">
+                <div class="card models-card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-12">
+                                <mat-form-field appearance="outline" class="w-100">
+                                    <mat-label>Choose Payment Option</mat-label>
+                                    <mat-select>
+                                        <mat-option *ngFor="let payment of paymentOptions" [value]="payment.id">
+                                            {{payment.viewValue}}
+                                        </mat-option>
+                                    </mat-select>
+                                </mat-form-field>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <h3>Monthly Budget</h3>
+                                <mat-slider min="1" max="100" step="1" class="w-100" [(ngModel)]="budgetAmount"
+                                    (input)="updateBudgetInput($event)">
+                                </mat-slider>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+
+                                <mat-form-field appearance="outline" class="form-field-prepended-text">
+                                    <span class="prepended-text">R</span>
+                                    <input class="text-right" matInput placeholder="Monthly Budget"
+                                        [(ngModel)]="budgetAmountInput" (keyup)="updateBudgetAmount($event)">
+                                    <!-- when this changes it should change the mat select value-->
+                                </mat-form-field>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="w-100">
+                                    <a class="w-100 text-start p-0"><i class="fa-solid fa-plus"></i> More filters</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9 col-12">
+                <div class="models-filter d-flex flex-row justify-content-between">
+                    <a *ngFor="let filter of filterValues" [ngClass]="{'selected-filter': filter.isSelected}"
+                        (click)="setSelectedModel(filter.modelId)">
+                        {{filter.filterValue}}
+                    </a>
+                </div>
+                <div class="models-list row" *ngIf="!modelIsSelected">
+                    <a *ngFor="let model of models" class="col-md-3 col-12 single-model"
+                        (click)="setSelectedModel(model.id)">
+                        <img src="{{model.src}}" alt="{{model.title}}" />
+                        <div class="text-center model-title">{{model.title}}</div>
+                    </a>
+                </div>
+                <div class="types-not-found" *ngIf="modelTypesToShow == null && modelIsSelected">
+                    <div>Sorry, we cannot find any {{selectedModel?.title}} types, please check back soon.</div>
+                </div>
+                <div class="types-list row" *ngIf="modelTypesToShow != null && modelTypesToShow.length > 0">
+                    <a *ngFor="let type of modelTypesToShow" [ngClass]="{'type-not-available': type.available == false}"
+                        class="col-md-3 col-12 single-type">
+
+                        <img src="{{type.src}}" alt="{{type.title}}" />
+                        <div class="type-details d-flex flex-row justify-content-start align-items-start">
+                            <mat-checkbox *ngIf="type.available" (change)="setModelTypeSelected(type.id)"
+                                [ngModel]="type.isSelected">
+                            </mat-checkbox>
+                            <p>{{type.isSelected}}</p>
+                            <div class="type-details-inner" id="model-type-{{type.id}}">
+                                <div class="type-title">{{type.title}}</div>
+                                <div class="type-results" *ngIf="type.numberOfResults != null">{{type.numberOfResults}}
+                                    Result{{type.numberOfResults ==
+                                    1 ? '' : 's' }}</div>
+                                <div *ngIf="!type.available">Model out of stock or not within budget</div>
+                            </div>
+
+                        </div>
+                        <div class="type-notify-me" *ngIf="!type.available">
+                            <a><i class="fa-bmw-blue fa-solid fa-chevron-right"></i> Notify me</a>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="find-my-bmw">
+    <!-- Sticky button -->
+    <div class="sticky-wrapper container">
+        <button (click)="findMyBMW()" mat-flat-button color="primary">Find my BMW</button>
+    </div>
+</div>
+<div class="find-my-bmw-background">
+
+</div>

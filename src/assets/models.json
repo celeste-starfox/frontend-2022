@@ -1,0 +1,140 @@
+[
+    {
+        "id": 1,
+        "filter-text": "1",
+        "title": "1 Series",
+        "src": "/assets/imgs/vehicles/1series.png",
+        "isSelected": false
+    },
+    {
+        "id": 2,
+        "title": "2 Series",
+        "src": "/assets/imgs/vehicles/2series.png",
+        "isSelected": false
+    },
+    {
+        "id": 3,
+        "title": "3 Series",
+        "src": "/assets/imgs/vehicles/3series.png",
+        "isSelected": false
+    },
+    {
+        "id": 4,
+        "title": "4 Series",
+        "src": "/assets/imgs/vehicles/4series.png",
+        "isSelected": false
+    },
+    {
+        "id": 5,
+        "title": "5 Series",
+        "src": "/assets/imgs/vehicles/5series.png",
+        "isSelected": false
+    },
+    {
+        "id": 6,
+        "title": "7 Series",
+        "src": "/assets/imgs/vehicles/7series.png",
+        "isSelected": false
+    },
+    {
+        "id": 7,
+        "title": "8 Series",
+        "src": "/assets/imgs/vehicles/8series.png",
+        "isSelected": false,
+        "types": [
+            {
+                "id": 1,
+                "title": "BMW M850i xDrive Coupé",
+                "src": "/assets/imgs/vehicles/x1.png",
+                "available": false,
+                "isSelected": false
+            },
+            {
+                "id": 2,
+                "title": "BMW M8 Coupé",
+                "src": "/assets/imgs/vehicles/x2.png",
+                "available": true,
+                "numberOfResults": 23,
+                "isSelected": false
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "title": "X Model",
+        "src": "/assets/imgs/vehicles/x1.png",
+        "isSelected": false,
+        "types": [
+            {
+                "id": 1,
+                "title": "X1 SAV",
+                "src": "/assets/imgs/vehicles/x1.png",
+                "available": true,
+                "numberOfResults": 1,
+                "isSelected": false
+            },
+            {
+                "id": 2,
+                "title": "X2 Sport Activity Coupe",
+                "src": "/assets/imgs/vehicles/x2.png",
+                "available": true,
+                "numberOfResults": 23,
+                "isSelected": false
+            },
+            {
+                "id": 3,
+                "title": "X3 SAV",
+                "src": "/assets/imgs/vehicles/x3.png",
+                "available": true,
+                "numberOfResults": 2,
+                "isSelected": false
+            },
+            {
+                "id": 4,
+                "title": "X4 Sport Activity Coupe",
+                "src": "/assets/imgs/vehicles/x4.png",
+                "available": false,
+                "isSelected": false
+            },
+            {
+                "id": 5,
+                "title": "X5 SAV",
+                "src": "/assets/imgs/vehicles/x5.png",
+                "available": false,
+                "isSelected": false
+            },
+            {
+                "id": 6,
+                "title": "X6 Sport Activity Coupe",
+                "src": "/assets/imgs/vehicles/x6.png",
+                "available": false,
+                "isSelected": false
+            },
+            {
+                "id": 7,
+                "title": "X7 SAV",
+                "src": "/assets/imgs/vehicles/x7.png",
+                "available": false,
+                "isSelected": false
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "title": "M Model",
+        "src": "/assets/imgs/vehicles/m2.png",
+        "isSelected": false
+    },
+    {
+        "id": 10,
+        "title": "Z Model",
+        "src": "/assets/imgs/vehicles/z4.png",
+        "isSelected": false
+    },
+    {
+        "id": 11,
+        "title": "i Model",
+        "src": "/assets/imgs/vehicles/i3.png",
+        "isSelected": false
+    }
+]

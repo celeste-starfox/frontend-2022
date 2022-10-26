@@ -1,0 +1,28 @@
+$white: rgba(255, 255, 255, 1);
+$bmw-blue: rgba(28, 105, 212, 1.00);
+$bmw-grey: rgba(102, 102, 102, 1.00);
+$black: rgba(20, 20, 20, 1.00);
+$light-grey: rgba(222, 222, 222, 1.00);
+
+$font-styles : ('group-bold': BMWGroupBold,
+    'group-regular': BMWGroupRegular,
+    'type-bold': BMWTypeBold,
+    'type-regular': BMWGroupRegular,
+    'type-light': BMWTypeLight);
+
+$colors : ('white' : $white, 'bmw-blue': $bmw-blue, 'bmw-grey' : $bmw-grey, 'light-grey': $light-grey);
+
+@each $key,
+$value in $colors {
+    .text-#{$key} {
+        color: $value;
+    }
+
+    .bg-#{$key} {
+        background-color: $value;
+    }
+
+    .fa-#{$key} {
+        color: $value;
+    }
+}

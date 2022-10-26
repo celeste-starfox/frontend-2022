@@ -1,2 +1,140 @@
-<h1>FRONT-END TEST</h1>
-<h3>GOOD LUCK</h3>
+<section class="main-navigation">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="d-flex flex-row justify-content-between align-items-center">
+                    <i class="fa-black fa-solid fa-bars"></i>
+                    <div class="navigation-logo">
+                        <img src="assets/imgs/bmw-logo-onlight.png" alt="BMW">
+                    </div>
+                </div>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-2 gap-md-4">
+                    <li class="nav-item">
+                        <a class="nav-link active" routerLink="/models-component" routerLinkActive="active"
+                            ariaCurrentWhenActive="page">Buy Online
+                            <i class="d-inline-block d-md-none fa-solid fa-chevron-right"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/testDrive-component" routerLinkActive="active"
+                            ariaCurrentWhenActive="page">Test Drive
+                            <i class="d-inline-block d-md-none fa-solid fa-chevron-right"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/help-component" routerLinkActive="active"
+                            ariaCurrentWhenActive="page">Need Help?
+                            <i class="d-inline-block d-md-none fa-solid fa-chevron-right"></i></a>
+                    </li>
+                </ul>
+                <span class="navbar-text">
+                    <div
+                        class="navbar-social-icons d-flex flex-column flex-md-row justify-content-between gap-2 gap-md-3 ">
+                        <a class="nav-icon p-md-2"><i class="leading-icon fa-solid fa-user"></i><span
+                                class="mobile-icon-text d-md-none d-inline-block">
+                                Login/Register</span>
+                            <i class="d-inline-block d-md-none fa-solid fa-chevron-right"></i></a>
+                        <a class="nav-icon p-md-2"><i class="leading-icon fa-solid fa-location-dot"></i><span
+                                class="mobile-icon-text d-md-none d-inline-block">
+                                Locate a Dealer</span><i
+                                class="d-inline-block d-md-none fa-solid fa-chevron-right"></i></a>
+                        <span
+                            class="d-flex flex-row justify-content-start justify-md-content-center align-items-center">
+                            <a class="nav-icon p-md-2"><i class="leading-icon fa-solid fa-cart-shopping"></i><span
+                                    class="mobile-icon-text d-md-none d-inline-block">
+                                    Cart</span><span class="badge rounded-pill bg-bmw-blue">4</span> <i
+                                    class="d-inline-block d-md-none fa-solid fa-chevron-right"></i></a>
+
+                        </span>
+                    </div>
+                </span>
+            </div>
+            <span class="navigation-logo d-flex flex-row align-items-center d-none d-lg-block">
+                <img src="https://buy.bmw.co.za/skin/frontend/rockar/bmw2/images/bmw-logo-ondark.png" alt="BMW">
+            </span>
+        </div>
+    </nav>
+    <div class="container hero-text">
+        <h2>Dream Big.</h2>
+        <h2>Buy Online.</h2>
+        <h3>Browse stock and purchase your perfect BMW.</h3>
+    </div>
+
+</section>
+<section class="main-content">
+    <router-outlet></router-outlet>
+</section>
+<section class="footer">
+    <footer>
+        <div class="footer-inner bg-light-grey">
+            <div class="container">
+                <div class="row justify-content-end social-media">
+                    <div class="col col-md-3 align-self-end col-12">
+                        <h4>Social Media</h4>
+                        <i class="fa-brands fa-youtube"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="footer-list col col-md-3 col-12">
+                        <h4>Buyer's Choice</h4>
+                        <ul>
+                            <li><a>Buy New</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-list col col-md-3 col-12">
+                        <h4>Explore BMW</h4>
+                        <ul>
+                            <li><a>Careers</a></li>
+                            <li><a>BMW Motorrod</a></li>
+                            <li><a>BMW.com</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-list col col-md-3 col-12">
+                        <h4>Visit Us</h4>
+                        <ul>
+                            <li><a>YouTube</a></li>
+                            <li><a>Twitter</a></li>
+                            <li><a>Facebook</a></li>
+                            <li><a>LinkedIn</a></li>
+                            <li><a>Instagram</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-list col col-md-3 col-12">
+                        <h4>Financial Services</h4>
+                        <ul>
+                            <li><a>Investor Relations</a></li>
+                            <li><a>Terms &amp; Conditions</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-navigation-copyright">
+            <div class="container">
+                <div class="row">
+                    <!-- Change the order here -->
+                    <div class="copyright col order-md-first col-md-4 order-last col-12 copyright">
+                        &copy; BMW SA {{currentYear}}
+                    </div>
+                    <div class="footer-legalities col order-md-last col-md-8 order-first col-12">
+                        <div class="d-flex flex-row flex-wrap justify-content-center justify-content-md-between">
+                            <a>Contact Us</a>
+                            <a>Legal Notice</a>
+                            <a>PAIA &amp; POPIA Manual</a>
+                            <a>Privacy Statement</a>
+                            <a>BMW B-BBEE Certificates</a>
+                            <a>Compliance</a>
+                            <a>Cookie Policy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</section>

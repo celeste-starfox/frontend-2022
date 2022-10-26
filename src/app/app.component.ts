@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = `angularTest2022 ${yourName}`;
-]
+  title = `angularTest2022 Celeste Engelbrecht`;
+  currentYear = (new Date()).getFullYear();
+}
 

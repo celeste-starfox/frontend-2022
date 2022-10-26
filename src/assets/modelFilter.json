@@ -1,0 +1,64 @@
+{
+    "modelFilter": [
+        {
+            "modelId": 0,
+            "filterValue": "ALL",
+            "isSelected": true
+        },
+        {
+            "modelId": 1,
+            "filterValue": "1",
+            "isSelected": false
+        },
+        {
+            "modelId": 2,
+            "filterValue": "2",
+            "isSelected": false
+        },
+        {
+            "modelId": 3,
+            "filterValue": "3",
+            "isSelected": false
+        },
+        {
+            "modelId": 4,
+            "filterValue": "4",
+            "isSelected": false
+        },
+        {
+            "modelId": 5,
+            "filterValue": "5",
+            "isSelected": false
+        },
+        {
+            "modelId": 6,
+            "filterValue": "7",
+            "isSelected": false
+        },
+        {
+            "modelId": 7,
+            "filterValue": "8",
+            "isSelected": false
+        },
+        {
+            "modelId": 8,
+            "filterValue": "X",
+            "isSelected": false
+        },
+        {
+            "modelId": 9,
+            "filterValue": "Z",
+            "isSelected": false
+        },
+        {
+            "modelId": 10,
+            "filterValue": "M",
+            "isSelected": false
+        },
+        {
+            "modelId": 11,
+            "filterValue": "i",
+            "isSelected": false
+        }
+    ]
+}
